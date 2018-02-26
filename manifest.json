@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "bgext",
+  "description": "This extension allows the user to change the background of the current page.",
+  "version": "1.0",
+    
+  "content_scripts": [
+ {
+ "matches": ["https://www.google.co.in/*"],
+ "css": ["main.css"]
+ }
+ ],
+
+  "page_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+  
+}
